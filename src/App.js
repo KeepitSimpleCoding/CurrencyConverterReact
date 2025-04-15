@@ -62,6 +62,7 @@ return (
     <h2>I am creating a react currency converter</h2>
     <CurrencyRow 
     currencyOptions={currencyOptions}
+    currencyData={currencyData}g
     selectCurrency = {fromCurrency}
     onChangeCurrency = {e => setFromCurrency(e.target.value)}
   onChangeAmount={handleFromAmountChange}
@@ -73,7 +74,7 @@ return (
             selectCurrency = {toCurrency}
             onChangeCurrency = {e => setToCurrency(e.target.value)}
             onChangeAmount={handleToAmountChange}
-                  amount={toAmount} />
+            amount={toAmount} />
 
    </>
 );
